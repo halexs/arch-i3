@@ -1,0 +1,10 @@
+URxvt.letterSpace:-3
+URxvt.font: xft:Terminus:pixelsize=20:medium
+URxvt.iso14755: False
+URxvt.perl-ext-common: default,clipboard
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+
+#urxvt.keysyn.shift-control-c: perl:clipboard:copy
+#urxvt.keysyn.shift-control-v: perl:clipboard:paste
+
