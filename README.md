@@ -4,6 +4,7 @@ This is my ongoing project to use Arch Linux with i3 Windows Manager on the Sams
 
 The Chromebook Plus is a touchscreen chromebook with an App Store running on ARM, so somethings that are x86 will not be compatible.
 
+Added inputs to make the scrolling faster and other mouse usability. TO make these system defaults, move the files to /etc/[whatever directory].
 
 Other things to keep in mind
 - Setup local timezone
