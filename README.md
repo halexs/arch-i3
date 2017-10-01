@@ -4,9 +4,12 @@ This is my ongoing project to use Arch Linux with i3 Windows Manager on the Sams
 
 The Chromebook Plus is a touchscreen chromebook with an App Store running on ARM, so somethings that are x86 will not be compatible.
 
+
 Other things to keep in mind
 - Setup local timezone
 - Test with usb devices
+- Download Chrome (chromium)
+- Possibly change mod key to Search/Capslock thingy
 
 # Todo
 
