@@ -1,0 +1,15 @@
+Description='eduroam'
+Interface='wlp1s0'
+Connection=wireless
+IP=dhcp
+ESSID=eduroam
+Security=wpa-configsection
+WPAConfigSection=(
+	'ssid="eduroam"'
+	'key_mgmt=WPA-EAP'
+	'eap=PEAP'
+	'proto=RSN'
+	'identity="###########@vt.edu"'
+	'password="###########"'
+	'phase2="auth=MSCHAPV2"'
+)

@@ -1,0 +1,7 @@
+Description="School/home network"
+Interface=wlp1s0
+Connection=wireless
+Security=wpa
+IP=dhcp
+ESSID=1207h
+Key= ############
