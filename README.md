@@ -17,6 +17,24 @@ Other things to keep in mind
 Big Problems:
 1. Audio through headphones (issues with identifying jack)
 2. Systemctl suspend logs out, even with lock.
+	- Logging startx output (and /var/log/Xorg.0.log.old
+```
+(EE) 
+(EE) Backtrace:
+(EE) 
+(EE) Segmentation fault at address 0x80
+(EE) 
+Fatal server error:
+(EE) Caught signal 11 (Segmentation fault). Server aborting
+(EE) 
+(EE) 
+```
+		- One issue might be with: 
+```
+gbm: failed to open any driver (search paths /usr/lib/xorg/modules/dri)
+gbm: Last dlopen error: /usr/lib/xorg/modules/dri/rockchip_dri.so: cannot open shared object file: No such file or directory
+```
+	- Current Suspicious: Rockchip cpu is causing Xserver to segfault.
 
 Nice things to have:
 1. Multiple finger gestures
