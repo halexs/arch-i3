@@ -16,7 +16,7 @@ Other things to keep in mind
 
 Big Problems:
 1. Audio through headphones (issues with identifying jack)
-2. Systemctl suspend logs out, even with lock.
+2. Systemctl suspend logs out, even with lock. -This might be fixed?
 	- Logging startx output (and /var/log/Xorg.0.log.old
 		- One issue might be with: 
 	- Current Suspicions: Rockchip cpu is causing Xserver to segfault.

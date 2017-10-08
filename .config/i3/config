@@ -11,6 +11,9 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod1
+set $sup Mod4
+#keycode 133 is the chromebook search key
+#Also called Super_L
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -30,6 +33,9 @@ font pango:monospace 16
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+####Getto way to suspend. Switch users (contrl + alt + f1, f2, whatever) and then suspend from their account.
+
+
 
 #Test suspend menu
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (p) shutdown
@@ -47,10 +53,19 @@ mode "$mode_system" {
 }
 bindsym $mod+Shift+p mode "$mode_system"
 
+#keycode 133 is the chromebook search key
+
+#Switch User
+#Sym is search + shift + f1 or f2. A little shifty with the release
+#bindcode --release 133+67 exec --no-startup-id xdotool key 'ctrl+alt+F1'
+#bindsym --release $sup+F1 exec --no-startup-id xdotool key 'alt+f'
+#bindsym --release $sup+F1 exec --no-startup-id xdotool key 'ctrl+alt+F1'
+#bindsym --release $sup+F2 exec --no-startup-id xdotool key 'ctrl+alt+F2'
+bindsym --release $sup+F2 exec --no-startup-id xdotool key 'ctrl+alt+F2'
 
 #Usermade (Alex made) commands
 bindsym $mod+c exec chromium
-bindsym $mod+p exec python
+#bindsym $mod+p exec python
 bindsym $mod+Shift+e exit 
 
 #Lock the screen
@@ -66,8 +81,8 @@ bindsym Control+Shift+Right focus right
 #bind chromebook "function" keys
 
 #Control Webpages
-bindsym --release F1 exec --no-startup-id xdotool key 'ctrl+Insert'
-bindsym --release F2 exec --no-startup-id xdotool key 'shift+Insert'
+bindsym --release F1 exec --no-startup-id xdotool key 'alt+Left'
+bindsym --release F2 exec --no-startup-id xdotool key 'alt+Right'
 bindsym --release F3 exec --no-startup-id xdotool key 'ctrl+r'
 bindsym F4 fullscreen toggle
 
